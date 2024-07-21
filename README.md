@@ -6,7 +6,7 @@ This repository contains the code and model for the GuideEnricher: Protecting th
 ### Requirements
 GuideEnricher requires Python 3.8 or later. You can install the required packages by running: `conda create --name <env> --file conda_requirements.txt`
 
-Note: GuideEnricher is developed on `ray 2.0.0` and `2.10.0`
+Note: GuideEnricher is developed on `ray 2.0.0` and `tensorflow 2.10.0`
 
 ### Retrain the game
 To retrain the game, you can use the following command:
@@ -28,7 +28,7 @@ python evader.py --name "<name of your experiment>" \
   --fcnet_hiddens "[32, 32]" \
   --no_iter 500
   ```
-You can modify the parameters as your game . eg: ```agent_challenge_table, agent_address_range_starts, agent_address_range_end, agent_mutable_address_range_start, agent_mutable_address_range_end, crowd_address_range_starts, no_of_crowd, no_of_wallets_for_each_crowd_agent, amount_of_money_in_each_crowd, fcnet_hiddens, no_iter.```
+You can modify the parameters as your game. eg: ```agent_challenge_table, agent_address_range_starts, agent_address_range_end, agent_mutable_address_range_start, agent_mutable_address_range_end, crowd_address_range_starts, no_of_crowd, no_of_wallets_for_each_crowd_agent, amount_of_money_in_each_crowd, fcnet_hiddens, no_iter.```
 
 ### Run the pretrained game
 To run the pretrained game, load the agent's model and config (check `model` dir), and run :
