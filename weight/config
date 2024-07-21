@@ -1,7 +1,7 @@
 'block_size': 5,
 'max_wait_time': 5,
 'no_addresses_agent_challenge_table': 2,
-'agent_challenge_table': [30, 30],
+'agent_challenge_table': [2, 3],
 'agent_address_range_starts': 0,
 'agent_address_range_end': 250,
 'agent_mutable_address_range_start': 10,
